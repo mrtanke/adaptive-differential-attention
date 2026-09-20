@@ -1,3 +1,3 @@
 from .config import ModelConfig
-from .transformer import DecoderOnlyTransformer
-from .attention import CausalSelfAttention,DifferentialAttentionV1,lambda_init_fn
+from .transformer import DecoderOnlyTransformer,ATTENTION_TYPES
+from .attention import CausalSelfAttention,DifferentialAttentionV1,HeadwiseDifferentialAttention,TokenwiseDifferentialAttention,TokenHeadwiseDifferentialAttention,lambda_init_fn
