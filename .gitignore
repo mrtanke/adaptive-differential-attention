@@ -1,0 +1,51 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Local datasets and Hugging Face cache
+data/*
+!data/.gitkeep
+
+# Experiment outputs and tracking data
+checkpoints/
+outputs/
+runs/
+wandb/
+tensorboard/
+
+# Runtime logs and process files
+logs/*
+!logs/.gitkeep
+pids/*
+!pids/.gitkeep
+*.log
+*.pid
+
+# Downloaded archives and generated external artifacts
+external/*.zip
+external/*.tar
+external/*.tar.gz
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
