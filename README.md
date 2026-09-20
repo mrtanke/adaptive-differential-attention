@@ -1,11 +1,67 @@
+## Adaptive Differential Attention
 
-## Controlled adaptive lambda variants
+Standard self-attention computes an attention map from the similarity between queries and keys:
 
-All four Differential Attention models use the exact Diff V1 paired-map formulation: A_diff = A1 - lambda * A2. They retain the same Q/K/V layout, RoPE, V1 layer lambda, headwise RMSNorm, V1 output scale, and output projection. The only difference is lambda granularity.
+$$
+A = \operatorname{softmax}\left(\frac{QK^\top}{\sqrt{d}}\right).
+$$
 
-- diff_v1: lambda = lambda_layer, the original learned V1 scalar.
-- diff_headwise: lambda = lambda_layer + delta_lambda_head; delta has one zero-initialized learned scalar per differential head.
-- diff_tokenwise: lambda = lambda_layer + delta_lambda_token(x_t); the zero-initialized projection maps d_model to one value shared by heads.
-- diff_token_headwise: lambda = lambda_layer + delta_lambda_token_head(x_t); the zero-initialized projection maps d_model to one value per differential head.
+[Differential Transformer](https://proceedings.iclr.cc/paper_files/paper/2025/hash/00b67df24009747e8bbed4c2c6f9c825-Abstract-Conference.html) (Ye et al., ICLR 2025) extends this idea by computing two attention maps, $A_1$ and $A_2$, and subtracting the second from the first:
 
-These are controlled extensions of Diff V1, not V2 reproductions: no sigmoid constraints, FlashAttention, GQA, or V2 projection/value-layout changes are used. All adaptive variants exactly match a V1 module with identical weights at initialization.
+$$
+A_{\mathrm{diff}} = A_1 - \lambda A_2.
+$$
+
+The coefficient $\lambda$ controls the strength of the subtraction. 
+
+This project studies four Differential Attention variants that differ only in the granularity of $\lambda$.
+
+### Differential Attention
+
+The original formulation uses one coefficient per layer:
+
+$$
+A_{\mathrm{diff}}^{(l)}
+=
+A_1^{(l)}
+-
+\lambda_l A_2^{(l)}.
+$$
+
+### Head-wise Differential Attention
+
+Each differential attention head has its own coefficient:
+
+$$
+A_{\mathrm{diff}}^{(l,h)}
+=
+A_1^{(l,h)}
+-
+\lambda_{l,h} A_2^{(l,h)}.
+$$
+
+### Token-wise Differential Attention
+
+Each query token has its own coefficient, shared across heads:
+
+$$
+A_{\mathrm{diff}}^{(l,t)}
+=
+A_1^{(l,t)}
+-
+\lambda_{l,t} A_2^{(l,t)}.
+$$
+
+### Token + Head-wise Differential Attention
+
+Each query token and attention head has its own coefficient:
+
+$$
+A_{\mathrm{diff}}^{(l,h,t)}
+=
+A_1^{(l,h,t)}
+-
+\lambda_{l,h,t} A_2^{(l,h,t)}.
+$$
+
+All adaptive variants are initialized to match the original Differential Attention behavior. The remaining Transformer architecture is kept unchanged to enable a controlled comparison.
