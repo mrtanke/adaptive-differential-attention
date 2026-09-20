@@ -1,9 +1,11 @@
 
-## Lambda variants
+## Controlled adaptive lambda variants
 
-- diff_v1: original layer-shared scalar computed from four learned head-dimension vectors.
-- diff_headwise: one learned static scalar per differential head.
-- diff_tokenwise: one learned query-token scalar shared by all differential heads.
-- diff_token_headwise: learned query-token/head logits, passed through sigmoid, following V2 lambda projection semantics while retaining V1 paired-map/value/RMSNorm/output structure.
+All four Differential Attention models use the exact Diff V1 paired-map formulation: A_diff = A1 - lambda * A2. They retain the same Q/K/V layout, RoPE, V1 layer lambda, headwise RMSNorm, V1 output scale, and output projection. The only difference is lambda granularity.
 
-V2 differences: no FlashAttention/GQA, no V2 projection/value layout changes, and a bias is initialized so lambda starts at the V1 depth initialization instead of V2s uninitialized linear projection behavior.
+- diff_v1: lambda = lambda_layer, the original learned V1 scalar.
+- diff_headwise: lambda = lambda_layer + delta_lambda_head; delta has one zero-initialized learned scalar per differential head.
+- diff_tokenwise: lambda = lambda_layer + delta_lambda_token(x_t); the zero-initialized projection maps d_model to one value shared by heads.
+- diff_token_headwise: lambda = lambda_layer + delta_lambda_token_head(x_t); the zero-initialized projection maps d_model to one value per differential head.
+
+These are controlled extensions of Diff V1, not V2 reproductions: no sigmoid constraints, FlashAttention, GQA, or V2 projection/value-layout changes are used. All adaptive variants exactly match a V1 module with identical weights at initialization.

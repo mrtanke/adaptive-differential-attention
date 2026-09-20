@@ -33,16 +33,20 @@ class DifferentialAttentionV1(DifferentialAttentionBase):
     def lambda_full(self): return torch.exp((self.lambda_q1*self.lambda_k1).sum().float())-torch.exp((self.lambda_q2*self.lambda_k2).sum().float())+self.lambda_init
     def lambda_values(self,x): return self.lambda_full()
 
-class HeadwiseDifferentialAttention(DifferentialAttentionBase):
-    def __init__(self,d,h,depth): super().__init__(d,h,depth); self.lambda_head=nn.Parameter(torch.full((self.num_heads,),self.lambda_init))
-    def lambda_values(self,x): return self.lambda_head[None,:,None,None]
-
-class TokenwiseDifferentialAttention(DifferentialAttentionBase):
+class HeadwiseDifferentialAttention(DifferentialAttentionV1):
+    """Diff V1 plus a static, zero-initialized per-head lambda delta."""
     def __init__(self,d,h,depth):
-        super().__init__(d,h,depth); self.lambda_proj=nn.Linear(d,1); nn.init.zeros_(self.lambda_proj.weight); nn.init.constant_(self.lambda_proj.bias,self.lambda_init)
-    def lambda_values(self,x): return self.lambda_proj(x).transpose(1,2).unsqueeze(-1)
+        super().__init__(d,h,depth); self.delta_lambda_head=nn.Parameter(torch.zeros(self.num_heads))
+    def lambda_values(self,x): return self.lambda_full()+self.delta_lambda_head[None,:,None,None]
 
-class TokenHeadwiseDifferentialAttention(DifferentialAttentionBase):
+class TokenwiseDifferentialAttention(DifferentialAttentionV1):
+    """Diff V1 plus a zero-initialized query-token lambda delta."""
     def __init__(self,d,h,depth):
-        super().__init__(d,h,depth); self.lambda_proj=nn.Linear(d,self.num_heads); nn.init.zeros_(self.lambda_proj.weight); nn.init.constant_(self.lambda_proj.bias,math.log(self.lambda_init/(1-self.lambda_init)))
-    def lambda_values(self,x): return torch.sigmoid(self.lambda_proj(x)).transpose(1,2).unsqueeze(-1)
+        super().__init__(d,h,depth); self.delta_lambda_token=nn.Linear(d,1); nn.init.zeros_(self.delta_lambda_token.weight); nn.init.zeros_(self.delta_lambda_token.bias)
+    def lambda_values(self,x): return self.lambda_full()+self.delta_lambda_token(x).transpose(1,2).unsqueeze(-1)
+
+class TokenHeadwiseDifferentialAttention(DifferentialAttentionV1):
+    """Diff V1 plus zero-initialized query-token/per-head lambda deltas."""
+    def __init__(self,d,h,depth):
+        super().__init__(d,h,depth); self.delta_lambda_token_head=nn.Linear(d,self.num_heads); nn.init.zeros_(self.delta_lambda_token_head.weight); nn.init.zeros_(self.delta_lambda_token_head.bias)
+    def lambda_values(self,x): return self.lambda_full()+self.delta_lambda_token_head(x).transpose(1,2).unsqueeze(-1)
