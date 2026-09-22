@@ -1,0 +1,232 @@
+[
+  {
+    "variant": "Standard",
+    "files": [
+      "results/experiment1_standard_final.json",
+      "results/experiment1_seed20260921_standard_final.json",
+      "results/experiment1_seed20260922_standard_final.json"
+    ],
+    "metrics": {
+      "best_validation_loss": {
+        "mean": 1.7642600580056509,
+        "std": 0.001877866539667985,
+        "values": [
+          1.7650681662559509,
+          1.7621134185791016,
+          1.7655985891819
+        ]
+      },
+      "test_loss": {
+        "mean": 1.759752080043157,
+        "std": 0.0019121686477678733,
+        "values": [
+          1.7598424077033996,
+          1.7577963483333587,
+          1.7616174840927123
+        ]
+      },
+      "test_ppl": {
+        "mean": 5.811003635892741,
+        "std": 0.0111108627768025,
+        "values": [
+          5.8115214712178735,
+          5.799642909522717,
+          5.821846526937631
+        ]
+      },
+      "training_seconds": {
+        "mean": 1436.4639549230535,
+        "std": 144.58218228513255,
+        "values": [
+          1602.9785109832883,
+          1363.6318579167128,
+          1342.7814958691597
+        ]
+      }
+    }
+  },
+  {
+    "variant": "Diff V1",
+    "files": [
+      "results/experiment1_differential_final.json",
+      "results/experiment1_seed20260921_differential_final.json",
+      "results/experiment1_seed20260922_differential_final.json"
+    ],
+    "metrics": {
+      "best_validation_loss": {
+        "mean": 1.7331450565656026,
+        "std": 0.0010292494288476805,
+        "values": [
+          1.7330942273139953,
+          1.7321421635150909,
+          1.7341987788677216
+        ]
+      },
+      "test_loss": {
+        "mean": 1.7281830024719238,
+        "std": 0.002142673605180737,
+        "values": [
+          1.7271321165561675,
+          1.7267686569690703,
+          1.7306482338905333
+        ]
+      },
+      "test_ppl": {
+        "mean": 5.63042277978246,
+        "std": 0.012071370471766494,
+        "values": [
+          5.624500344812367,
+          5.622456437700732,
+          5.644311556834281
+        ]
+      },
+      "training_seconds": {
+        "mean": 1582.328813701868,
+        "std": 214.92543613431909,
+        "values": [
+          1830.260047070682,
+          1448.8489583358169,
+          1467.8774356991053
+        ]
+      }
+    }
+  },
+  {
+    "variant": "Head-wise Diff",
+    "files": [
+      "results/experiment1_headwise_final.json",
+      "results/experiment1_seed20260921_headwise_final.json",
+      "results/experiment1_seed20260922_headwise_final.json"
+    ],
+    "metrics": {
+      "best_validation_loss": {
+        "mean": 1.733041430711746,
+        "std": 0.0012329372756737806,
+        "values": [
+          1.732693088054657,
+          1.7320201408863067,
+          1.7344110631942748
+        ]
+      },
+      "test_loss": {
+        "mean": 1.7282045714060466,
+        "std": 0.0023474137293413035,
+        "values": [
+          1.7268726336956024,
+          1.7268260824680328,
+          1.7309149980545044
+        ]
+      },
+      "test_ppl": {
+        "mean": 5.630545949928959,
+        "std": 0.013226161264918507,
+        "values": [
+          5.623041072709884,
+          5.622779319337793,
+          5.6458174577391995
+        ]
+      },
+      "training_seconds": {
+        "mean": 1590.0624514520168,
+        "std": 218.31628043921594,
+        "values": [
+          1841.6743080504239,
+          1477.6954040266573,
+          1450.8176422789693
+        ]
+      }
+    }
+  },
+  {
+    "variant": "Token-wise Diff",
+    "files": [
+      "results/experiment1_tokenwise_final.json",
+      "results/experiment1_seed20260921_tokenwise_final.json",
+      "results/experiment1_seed20260922_tokenwise_final.json"
+    ],
+    "metrics": {
+      "best_validation_loss": {
+        "mean": 1.7390574598312378,
+        "std": 0.0018009409253530338,
+        "values": [
+          1.7392045092582702,
+          1.7407803678512572,
+          1.7371875023841858
+        ]
+      },
+      "test_loss": {
+        "mean": 1.7338047130902607,
+        "std": 0.0019738197407789984,
+        "values": [
+          1.7344311475753784,
+          1.7353892970085143,
+          1.7315936946868897
+        ]
+      },
+      "test_ppl": {
+        "mean": 5.662163207742056,
+        "std": 0.011171361154128142,
+        "values": [
+          5.665703937517793,
+          5.6711351300653625,
+          5.649650555643013
+        ]
+      },
+      "training_seconds": {
+        "mean": 1604.0439146670203,
+        "std": 211.2337444886666,
+        "values": [
+          1847.9479044154286,
+          1483.773481361568,
+          1480.410358224064
+        ]
+      }
+    }
+  },
+  {
+    "variant": "Token + Head-wise Diff",
+    "files": [
+      "results/experiment1_token_headwise_final.json",
+      "results/experiment1_seed20260921_token_headwise_final.json",
+      "results/experiment1_seed20260922_token_headwise_final.json"
+    ],
+    "metrics": {
+      "best_validation_loss": {
+        "mean": 1.7342067662874858,
+        "std": 0.0032859186940184548,
+        "values": [
+          1.7369397103786468,
+          1.7305609250068665,
+          1.735119663476944
+        ]
+      },
+      "test_loss": {
+        "mean": 1.729453461964925,
+        "std": 0.0018375512990191367,
+        "values": [
+          1.7314804255962373,
+          1.7278966951370238,
+          1.7289832651615142
+        ]
+      },
+      "test_ppl": {
+        "mean": 5.637578265474833,
+        "std": 0.01036274832542612,
+        "values": [
+          5.649010661102891,
+          5.628802361709444,
+          5.634921773612163
+        ]
+      },
+      "training_seconds": {
+        "mean": 1613.194686298569,
+        "std": 210.26305383335315,
+        "values": [
+          1855.9492865502834,
+          1495.4512339681387,
+          1488.183538377285
+        ]
+      }
+    }
+  }
+]
