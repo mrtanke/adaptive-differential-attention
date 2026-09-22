@@ -49,3 +49,8 @@ external/*.tar.gz
 .idea/
 .DS_Store
 Thumbs.db
+
+# Generated Experiment 1 outputs (final result JSONs are explicitly tracked)
+artifacts/
+results/*
+!results/experiment1_*_final.json

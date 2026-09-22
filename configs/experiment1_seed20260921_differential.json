@@ -1,0 +1,6 @@
+{
+  "base_config": "experiment1_base.json",
+  "run_name": "experiment1_seed20260921_differential",
+  "attention_type": "diff_v1",
+  "seed": 20260921
+}

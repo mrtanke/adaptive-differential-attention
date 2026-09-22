@@ -1,0 +1,5 @@
+{
+  "base_config": "experiment1_base.json",
+  "run_name": "experiment1_tokenwise",
+  "attention_type": "diff_tokenwise"
+}
