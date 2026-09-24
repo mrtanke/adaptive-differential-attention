@@ -55,21 +55,27 @@ All adaptive variants are initialized to match the original Differential Attenti
 
 We compare Standard Attention and the four Differential Attention variants on TinyStories under the same training setup.
 
+All models use a 6-layer decoder-only Transformer with `d_model=256`, 8 attention heads, `ffn_dim=704`, context length 128, and an 8,192-token BPE tokenizer. Models are trained for 20,000 steps using the same optimizer and learning-rate schedule.
+
+Results are reported as mean ± sample standard deviation across three seeds.
+
 | Variant | Best Validation Loss | Test Loss | Test PPL |
 |---|---:|---:|---:|
-| Standard Attention | 1.7651 | 1.7598 | 5.8115 |
-| Differential Attention | 1.7331 | 1.7271 | 5.6245 |
-| Head-wise Differential Attention | 1.7327 | 1.7269 | 5.6230 |
-| Token-wise Differential Attention | 1.7392 | 1.7344 | 5.6657 |
-| Token + Head-wise Differential Attention | 1.7369 | 1.7315 | 5.6490 |
+| Standard Attention | 1.7643 ± 0.0019 | 1.7598 ± 0.0019 | 5.8110 ± 0.0111 |
+| Differential Attention | 1.7331 ± 0.0010 | 1.7282 ± 0.0021 | 5.6304 ± 0.0121 |
+| Head-wise Differential Attention | 1.7330 ± 0.0012 | 1.7282 ± 0.0023 | 5.6305 ± 0.0132 |
+| Token-wise Differential Attention | 1.7391 ± 0.0018 | 1.7338 ± 0.0020 | 5.6622 ± 0.0112 |
+| Token + Head-wise Differential Attention | 1.7342 ± 0.0033 | 1.7295 ± 0.0018 | 5.6376 ± 0.0104 |
 
-All four Differential Attention variants improve test perplexity over Standard Attention in this single-seed experiment. 
-- Head-wise Differential Attention achieves the lowest perplexity, although its difference from the original Differential Attention is very small.
-- The token-conditioned variants do not provide an additional language-modeling improvement in this experiment.
+Across three seeds, all Differential Attention variants improve test perplexity over Standard Attention.
+
+The original layer-wise Differential Attention and Head-wise Differential Attention perform almost identically. 
+Increasing the granularity of $\lambda$ therefore does not provide a clear additional language-modeling benefit in this setting. 
+The token-conditioned variants also do not outperform the original formulation.
+
+![Three-seed test perplexity](figures/experiment1_three_seed_test_ppl.png)
 
 ![Validation curves](figures/experiment1_validation_curves.png)
-
-![Test perplexity](figures/experiment1_test_perplexity.png)
 
 ![Lambda by layer](figures/experiment1_lambda_layers.png)
 
