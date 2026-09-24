@@ -72,3 +72,21 @@ All four Differential Attention variants improve test perplexity over Standard A
 ![Test perplexity](figures/experiment1_test_perplexity.png)
 
 ![Lambda by layer](figures/experiment1_lambda_layers.png)
+
+## Experiment 2: OOD Context-Length Retrieval Robustness
+
+We test the five attention variants on a synthetic needle-in-a-haystack retrieval task. Each model is fine-tuned from its Experiment 1 checkpoint using contexts with 4–30 distractors, and then tested on longer contexts with up to 480 distractors.
+
+Since adding more distractors also makes the input longer, this experiment mainly tests OOD context-length retrieval robustness, rather than pure resistance to irrelevant information.
+
+| Variant | 30 | 60 | 120 | 240 | 480 |
+|---|---:|---:|---:|---:|---:|
+| Standard | 1.000 ± 0.000 | 0.667 ± 0.330 | 0.026 ± 0.028 | 0.008 ± 0.003 | 0.009 ± 0.002 |
+| Differential | 1.000 ± 0.000 | 0.200 ± 0.214 | 0.011 ± 0.001 | 0.008 ± 0.002 | 0.007 ± 0.003 |
+| Head-wise | 1.000 ± 0.000 | 0.175 ± 0.209 | 0.012 ± 0.001 | 0.008 ± 0.002 | 0.006 ± 0.002 |
+| Token-wise | 1.000 ± 0.000 | 0.299 ± 0.238 | 0.010 ± 0.002 | 0.009 ± 0.004 | 0.006 ± 0.003 |
+| Token + Head-wise | 1.000 ± 0.000 | 0.096 ± 0.086 | 0.011 ± 0.004 | 0.008 ± 0.002 | 0.006 ± 0.001 |
+
+In this small-scale setting, Standard Attention handles longer contexts better, while the Differential variants start to lose accuracy earlier. Making $\lambda$ more fine-grained does not seem to improve robustness.
+
+![Experiment 2 dense transition](figures/experiment2_dense_accuracy_vs_distractors.png)

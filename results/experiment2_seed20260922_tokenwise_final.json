@@ -1,0 +1,3527 @@
+{
+  "run_name": "experiment2_seed20260922_tokenwise",
+  "pilot": false,
+  "protocol": "synthetic_niah_answer_only",
+  "initial_checkpoint": "checkpoints/experiment1_seed20260922_tokenwise_final.pt",
+  "steps": 8000,
+  "parameter_count": 9017222,
+  "training_seconds": 379.58679954335093,
+  "peak_gpu_memory_bytes": 17317373440,
+  "checkpoint_path": "checkpoints/experiment2_seed20260922_tokenwise_final.pt",
+  "training_curve": [
+    {
+      "step": 500,
+      "train_loss": 0.00227947486564517,
+      "mean_accuracy": 0.5925,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.05553276091814041,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.004629650618880987,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0028088737744838,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.003032994456589222,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0034555045422166586,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0021962900646030903,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0020442544482648373,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0032462377566844225,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0020244992338120937,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.002181856194511056,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0026661278679966927,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.002225683070719242,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0022148513235151768,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.796875,
+          "loss": 1.5505666732788086,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.734375,
+          "loss": 1.9923213720321655,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.515376091003418,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.25,
+          "loss": 4.776935577392578,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.765921115875244,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.623476982116699,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.851363182067871,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 7.96884822845459,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.03439998626709,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.820374250411987,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.586510896682739,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.158992290496826,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 1000,
+      "train_loss": 0.0008462556870654225,
+      "mean_accuracy": 0.595,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.04458998516201973,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.001934519037604332,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0011194569524377584,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0010764829348772764,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0010491005377843976,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0009323734557256103,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0006032395176589489,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0008391512674279511,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0006921687163412571,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0006396869430318475,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0008615470724180341,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0007164035923779011,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0009661210933700204,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.859375,
+          "loss": 1.4287914037704468,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.734375,
+          "loss": 2.0236825942993164,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.855558395385742,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.265625,
+          "loss": 4.3768086433410645,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.545662879943848,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.726105213165283,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.487089157104492,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.082155227661133,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.186199188232422,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.153813362121582,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.80033016204834,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.383318901062012,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 1500,
+      "train_loss": 0.0005018797237426043,
+      "mean_accuracy": 0.59125,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.03495711088180542,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.001028632977977395,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0004793413099832833,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0006526678334921598,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0005847743013873696,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0005719681503251195,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0005343778757378459,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0006223259260877967,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0004946912522427738,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0004832340928260237,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0005816211923956871,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0004516273911576718,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0005545256426557899,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.78125,
+          "loss": 1.7461225986480713,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.75,
+          "loss": 1.830811619758606,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.358599662780762,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.140625,
+          "loss": 4.977548599243164,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.03125,
+          "loss": 7.381481170654297,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 7.887483596801758,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.579817771911621,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.748837471008301,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.796196937561035,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.371981620788574,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.865687847137451,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.84483003616333,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 2000,
+      "train_loss": 0.00037055928260087967,
+      "mean_accuracy": 0.583125,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.03259987011551857,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0007992463652044535,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00048011596663855016,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0005361640360206366,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0004119871882721782,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0003428567142691463,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0003701108798850328,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00048236767179332674,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0003646141558419913,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0003535481228027493,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0005352480802685022,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0003935029380954802,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0003630399005487561,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.75,
+          "loss": 2.1022603511810303,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.75,
+          "loss": 2.5283894538879395,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 7.86370325088501,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.03125,
+          "loss": 5.449697494506836,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 7.959273338317871,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.130443572998047,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.804293155670166,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.725075721740723,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.109682083129883,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.609919548034668,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.154914379119873,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.393956184387207,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 2500,
+      "train_loss": 0.0004831808037124574,
+      "mean_accuracy": 0.570625,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.02904985286295414,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0005783161614090204,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00043207791168242693,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.000360785867087543,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0004019785556010902,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0002781837829388678,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0003108910459559411,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0004280246212147176,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00031545429374091327,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00026597228134050965,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00044184463331475854,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0003364628937561065,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00027771867462433875,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.65625,
+          "loss": 2.4069559574127197,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.46875,
+          "loss": 3.4727439880371094,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0625,
+          "loss": 7.597512245178223,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.046875,
+          "loss": 6.187934398651123,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.103031158447266,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.484108924865723,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.776460647583008,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.04467487335205,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.237829208374023,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.484559059143066,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.032034873962402,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.291651725769043,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 3000,
+      "train_loss": 0.00025175424525514245,
+      "mean_accuracy": 0.574375,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.030857011675834656,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00041672802763059735,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0002858322113752365,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0003002005396410823,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0003062892355956137,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0003083603805862367,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0002262092020828277,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0002969945198856294,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0002131140645360574,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00027709006099030375,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00033931375946849585,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00024123380717355758,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00022946306853555143,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.609375,
+          "loss": 2.695793628692627,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.5625,
+          "loss": 3.360419988632202,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0625,
+          "loss": 7.5081963539123535,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.0625,
+          "loss": 6.244101047515869,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.925999641418457,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.474916458129883,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.071393013000488,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 7.682290077209473,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.934904098510742,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.124544620513916,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.094276905059814,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.439420700073242,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 3500,
+      "train_loss": 0.00021197841851972044,
+      "mean_accuracy": 0.56875,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.036053888499736786,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00035178399411961436,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00025659240782260895,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.000263338559307158,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0002762280055321753,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00020985829178243876,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00025103933876380324,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00023186298494692892,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00025038421154022217,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00019719108240678906,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00025659374659880996,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00020903063705191016,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00019703003636095673,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.546875,
+          "loss": 2.9398746490478516,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.53125,
+          "loss": 3.5480494499206543,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 7.522866249084473,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.03125,
+          "loss": 6.833300590515137,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.054250717163086,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.239126205444336,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.03125,
+          "loss": 8.394245147705078,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.84156608581543,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.022822380065918,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.3212308883667,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.362458229064941,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 8.401998519897461,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 4000,
+      "train_loss": 0.00020372270955704153,
+      "mean_accuracy": 0.5625,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.06081780791282654,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0003154014702886343,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0002076056262012571,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00024494261015206575,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0002256746229249984,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0001946581614902243,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0001692156947683543,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0002410222659818828,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.0001935429172590375,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00019211792096029967,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00020892922475468367,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00017183342424686998,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00018703116802498698,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.546875,
+          "loss": 3.0387096405029297,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.453125,
+          "loss": 3.596020221710205,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.8892388343811035,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 6.896775722503662,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.300033569335938,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.027820587158203,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.076803207397461,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.242094039916992,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.345097541809082,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.469367504119873,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.137465476989746,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.312674522399902,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 4500,
+      "train_loss": 0.00016900809714570642,
+      "mean_accuracy": 0.56,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.043631501495838165,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00022858860029373318,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00020202524319756776,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00018072438251692802,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0002105684980051592,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00015778120723553002,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00018257353804074228,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00016481411876156926,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00014271665713749826,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0001450152776669711,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00016552793385926634,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00013966199185233563,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00016634244821034372,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.515625,
+          "loss": 3.411668062210083,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.421875,
+          "loss": 3.7059121131896973,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.8883957862854,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.197361946105957,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.9832763671875,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.461066246032715,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.185356140136719,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.425492286682129,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.36368465423584,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.991141080856323,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.069899082183838,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.472989559173584,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 5000,
+      "train_loss": 0.00013776638661511242,
+      "mean_accuracy": 0.549375,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.03929745405912399,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00025327331968583167,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00016619014786556363,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00014382522203959525,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00017377978656440973,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00015834116493351758,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00013179369852878153,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00014846099657006562,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00010862779163289815,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00013549164577852935,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.000148350081872195,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00011503514542710036,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00015025671746116132,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.390625,
+          "loss": 3.606597900390625,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.265625,
+          "loss": 4.3242034912109375,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.397102355957031,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.6285858154296875,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.206948280334473,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 8.247028350830078,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.214252471923828,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.336316108703613,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.476753234863281,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.517133712768555,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.152499675750732,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.429494380950928,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 5500,
+      "train_loss": 0.0001363810442853719,
+      "mean_accuracy": 0.548125,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.07074436545372009,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00019700753910001367,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00012765188876073807,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00012936753046233207,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00013320057769306004,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.731717000249773e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00013457363820634782,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00014860043302178383,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00014086841838434339,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00012199560296721756,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00014055235078558326,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00012896268162876368,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0001285425096284598,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.375,
+          "loss": 4.15079402923584,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.21875,
+          "loss": 4.954966068267822,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.036786079406738,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.046875,
+          "loss": 7.166055679321289,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.7056074142456055,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.319154739379883,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.812544822692871,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.364289283752441,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.497125625610352,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.326583862304688,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.44735860824585,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 8.364477157592773,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 6000,
+      "train_loss": 0.00010063827357953414,
+      "mean_accuracy": 0.5475,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.06198440492153168,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00019828096264973283,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00012810775660909712,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0001357941800961271,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00013099871284794062,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00012017690460197628,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.0001271317742066458,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00011588587221922353,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00011275455472059548,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00011408796854084358,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00010384419147158042,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.384671284351498e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 9.814334771363065e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.265625,
+          "loss": 4.1883955001831055,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.234375,
+          "loss": 4.475919246673584,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.226949691772461,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.046875,
+          "loss": 7.328615188598633,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.395503997802734,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.489039421081543,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.195371627807617,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.046875,
+          "loss": 7.849822044372559,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.237529754638672,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.238813877105713,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.156893253326416,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0625,
+          "loss": 7.884927749633789,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 6500,
+      "train_loss": 9.40618192544207e-05,
+      "mean_accuracy": 0.544375,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.05735084414482117,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00013136205961927772,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00011141774302814156,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00010044712689705193,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00010900407505687326,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.123331983573735e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00010199047392234206,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00010625546565279365,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.312363545177504e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.298322791233659e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00012378560495562851,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.893059905152768e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.891242032404989e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.25,
+          "loss": 3.940765857696533,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.234375,
+          "loss": 4.842397689819336,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.735605239868164,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.046875,
+          "loss": 7.569223403930664,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.482386589050293,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.613120079040527,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.487167358398438,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.419602394104004,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.54389762878418,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 7.922495365142822,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 8.648935317993164,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.409297466278076,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 7000,
+      "train_loss": 9.006905020214617e-05,
+      "mean_accuracy": 0.54375,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.07596998661756516,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0001258664851775393,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 0.00011002599785570055,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 9.565080108586699e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 9.91619672277011e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 6.956650759093463e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 0.00010689886403270066,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 9.6846379165072e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.235463221557438e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 7.874253788031638e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 8.878059452399611e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.804645378608257e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.907916344469413e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.3125,
+          "loss": 3.777028799057007,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.21875,
+          "loss": 4.78103494644165,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.083782196044922,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.3814473152160645,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.799595832824707,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.070838928222656,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.362322807312012,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.378999710083008,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.03125,
+          "loss": 8.528635025024414,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.425978660583496,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.63391637802124,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.585540294647217,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 7500,
+      "train_loss": 8.221771713579074e-05,
+      "mean_accuracy": 0.54875,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.05945661664009094,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.00012340929242782295,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 9.400692215422168e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 9.745526767801493e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.0001032032014336437,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 8.652907854411751e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.878444350557402e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 8.643426554044709e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 7.041924982331693e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.595945837441832e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 8.519236143911257e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 7.72003986639902e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 7.494320016121492e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.34375,
+          "loss": 3.988734483718872,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.296875,
+          "loss": 4.279158592224121,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.082812309265137,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 7.790546417236328,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 7.900933265686035,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.635099411010742,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.01555347442627,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.015625,
+          "loss": 7.596962928771973,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.288179397583008,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.046875,
+          "loss": 8.298731803894043,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.623260974884033,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.584115982055664,
+          "cases": 64
+        }
+      ]
+    },
+    {
+      "step": 8000,
+      "train_loss": 6.661497172899544e-05,
+      "mean_accuracy": 0.546875,
+      "scores": [
+        {
+          "distractors": 0,
+          "context_tokens": 7,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 0.059404563158750534,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 9.125126234721392e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 7.45055585866794e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 4,
+          "context_tokens": 23,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 8.062560664257035e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 7.449829718098044e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 5.8890604123007506e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 8,
+          "context_tokens": 39,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 6.749325257260352e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 8.528161561116576e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 7.322784222196788e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 16,
+          "context_tokens": 71,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 5.533498915610835e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "early",
+          "accuracy": 1.0,
+          "loss": 8.351783617399633e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "middle",
+          "accuracy": 1.0,
+          "loss": 6.82310201227665e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 30,
+          "context_tokens": 127,
+          "needle_depth": "late",
+          "accuracy": 1.0,
+          "loss": 7.703826122451574e-05,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "early",
+          "accuracy": 0.3125,
+          "loss": 4.03398323059082,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "middle",
+          "accuracy": 0.28125,
+          "loss": 4.417967319488525,
+          "cases": 64
+        },
+        {
+          "distractors": 60,
+          "context_tokens": 247,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 7.810264587402344,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "early",
+          "accuracy": 0.03125,
+          "loss": 7.830458641052246,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.943525314331055,
+          "cases": 64
+        },
+        {
+          "distractors": 120,
+          "context_tokens": 487,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.708440780639648,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "early",
+          "accuracy": 0.015625,
+          "loss": 8.382007598876953,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.815269470214844,
+          "cases": 64
+        },
+        {
+          "distractors": 240,
+          "context_tokens": 967,
+          "needle_depth": "late",
+          "accuracy": 0.0,
+          "loss": 8.566442489624023,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "early",
+          "accuracy": 0.0,
+          "loss": 8.334551334381104,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "middle",
+          "accuracy": 0.0,
+          "loss": 8.412114143371582,
+          "cases": 64
+        },
+        {
+          "distractors": 480,
+          "context_tokens": 1927,
+          "needle_depth": "late",
+          "accuracy": 0.015625,
+          "loss": 8.280925750732422,
+          "cases": 64
+        }
+      ]
+    }
+  ],
+  "final_scores": [
+    {
+      "distractors": 0,
+      "context_tokens": 7,
+      "needle_depth": "early",
+      "accuracy": 1.0,
+      "loss": 0.047850824892520905,
+      "cases": 512
+    },
+    {
+      "distractors": 4,
+      "context_tokens": 23,
+      "needle_depth": "early",
+      "accuracy": 1.0,
+      "loss": 0.00010801172902574763,
+      "cases": 512
+    },
+    {
+      "distractors": 4,
+      "context_tokens": 23,
+      "needle_depth": "middle",
+      "accuracy": 1.0,
+      "loss": 8.367656846530735e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 4,
+      "context_tokens": 23,
+      "needle_depth": "late",
+      "accuracy": 1.0,
+      "loss": 7.949256541905925e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 8,
+      "context_tokens": 39,
+      "needle_depth": "early",
+      "accuracy": 1.0,
+      "loss": 8.08777185739018e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 8,
+      "context_tokens": 39,
+      "needle_depth": "middle",
+      "accuracy": 1.0,
+      "loss": 7.07642175257206e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 8,
+      "context_tokens": 39,
+      "needle_depth": "late",
+      "accuracy": 1.0,
+      "loss": 7.195628859335557e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 16,
+      "context_tokens": 71,
+      "needle_depth": "early",
+      "accuracy": 1.0,
+      "loss": 7.557088974863291e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 16,
+      "context_tokens": 71,
+      "needle_depth": "middle",
+      "accuracy": 1.0,
+      "loss": 6.764572026440874e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 16,
+      "context_tokens": 71,
+      "needle_depth": "late",
+      "accuracy": 1.0,
+      "loss": 6.737966032233089e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 30,
+      "context_tokens": 127,
+      "needle_depth": "early",
+      "accuracy": 1.0,
+      "loss": 8.007942960830405e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 30,
+      "context_tokens": 127,
+      "needle_depth": "middle",
+      "accuracy": 1.0,
+      "loss": 7.089090649969876e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 30,
+      "context_tokens": 127,
+      "needle_depth": "late",
+      "accuracy": 1.0,
+      "loss": 6.975524593144655e-05,
+      "cases": 512
+    },
+    {
+      "distractors": 60,
+      "context_tokens": 247,
+      "needle_depth": "early",
+      "accuracy": 0.265625,
+      "loss": 4.2458391189575195,
+      "cases": 512
+    },
+    {
+      "distractors": 60,
+      "context_tokens": 247,
+      "needle_depth": "middle",
+      "accuracy": 0.23046875,
+      "loss": 4.759345054626465,
+      "cases": 512
+    },
+    {
+      "distractors": 60,
+      "context_tokens": 247,
+      "needle_depth": "late",
+      "accuracy": 0.01171875,
+      "loss": 8.052520751953125,
+      "cases": 512
+    },
+    {
+      "distractors": 120,
+      "context_tokens": 487,
+      "needle_depth": "early",
+      "accuracy": 0.01171875,
+      "loss": 7.499059617519379,
+      "cases": 512
+    },
+    {
+      "distractors": 120,
+      "context_tokens": 487,
+      "needle_depth": "middle",
+      "accuracy": 0.001953125,
+      "loss": 8.535906553268433,
+      "cases": 512
+    },
+    {
+      "distractors": 120,
+      "context_tokens": 487,
+      "needle_depth": "late",
+      "accuracy": 0.009765625,
+      "loss": 8.501479178667068,
+      "cases": 512
+    },
+    {
+      "distractors": 240,
+      "context_tokens": 967,
+      "needle_depth": "early",
+      "accuracy": 0.00390625,
+      "loss": 8.437586545944214,
+      "cases": 512
+    },
+    {
+      "distractors": 240,
+      "context_tokens": 967,
+      "needle_depth": "middle",
+      "accuracy": 0.00390625,
+      "loss": 8.458751916885376,
+      "cases": 512
+    },
+    {
+      "distractors": 240,
+      "context_tokens": 967,
+      "needle_depth": "late",
+      "accuracy": 0.0078125,
+      "loss": 8.498796224594116,
+      "cases": 512
+    },
+    {
+      "distractors": 480,
+      "context_tokens": 1927,
+      "needle_depth": "early",
+      "accuracy": 0.005859375,
+      "loss": 8.46975588798523,
+      "cases": 512
+    },
+    {
+      "distractors": 480,
+      "context_tokens": 1927,
+      "needle_depth": "middle",
+      "accuracy": 0.00390625,
+      "loss": 8.28365021944046,
+      "cases": 512
+    },
+    {
+      "distractors": 480,
+      "context_tokens": 1927,
+      "needle_depth": "late",
+      "accuracy": 0.0,
+      "loss": 8.251695722341537,
+      "cases": 512
+    }
+  ]
+}

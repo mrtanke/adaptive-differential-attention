@@ -1,0 +1,1 @@
+{"base_config":"experiment2_base.json","run_name":"experiment2_seed20260922_differential","seed":20260922,"attention_type":"diff_v1","initial_checkpoint":"checkpoints/experiment1_seed20260922_differential_final.pt"}

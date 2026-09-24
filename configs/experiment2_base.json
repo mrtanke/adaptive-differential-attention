@@ -1,0 +1,20 @@
+{
+  "seed": 20260922,
+  "model": {"vocab_size": 8192, "d_model": 256, "n_layers": 6, "n_heads": 8, "ffn_dim": 704},
+  "training": {
+    "batch_size": 128,
+    "max_steps": 8000,
+    "warmup_steps": 400,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 0.00003,
+    "weight_decay": 0.1,
+    "eval_every": 500
+  },
+  "pilot": {"max_steps": 1500, "eval_cases_per_condition": 128, "final_cases_per_condition": 512},
+  "evaluation": {
+    "distractor_counts": [0, 4, 8, 16, 30, 60, 120, 240, 480],
+    "depths": ["early", "middle", "late"],
+    "training_eval_cases_per_condition": 64,
+    "max_attention_elements_per_batch": 120000000
+  }
+}

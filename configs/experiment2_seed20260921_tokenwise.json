@@ -1,0 +1,1 @@
+{"base_config":"experiment2_base.json","run_name":"experiment2_seed20260921_tokenwise","seed":20260921,"attention_type":"diff_tokenwise","initial_checkpoint":"checkpoints/experiment1_seed20260921_tokenwise_final.pt"}
